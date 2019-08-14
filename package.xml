@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+    <name>HE_DevTools_EmailRedirect</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>HE Dev Tools Email Redirect allows a developer to redirect all email from a Magento store to a specific address.</summary>
+    <description>When maintaining a Magento store, developers often need to copy the database from the live site to a development server. Once the live data is installed in the dev environment, you need to be absolutely certain that customer emails are not accidentally sent from the development environment. This can cause a lot of confusion for clients and customers.&#xD;
+&#xD;
+Using Magento&#x2019;s configuration settings you can block all email from being sent by disabling email sending.  This setting is found in System Configuration menu under Advanced/System/Mail Sending Settings. This method is an all or nothing way to solve the problem. However it's not always practical, because you may want to send mail to test the mail templates or some other e-mail related functionality.&#xD;
+&#xD;
+So this is where the new Human Element Dev Tools module Route Customer E-mail comes into play.&#xD;
+&#xD;
+With this module, you can tell Magento which domain names it's OK to send e-mail to (i.e. the domains of your company and your client) and where to route all other customer e-mails (i.e. a testing email address).  &#xD;
+&#xD;
+The interface is simple system configuration panel which should appear near the Advanced settings section at the bottom of the configurations list. &#xD;
+&#xD;
+To set up the redirects, just follow these simple steps &#x2013;&#xD;
+&#xD;
+1)	Open up the Route Customer Email panel and enable the Email Redirects&#xD;
+2)	In Allowed |Domain names field you specify which domain names it's OK to send e-mails to. This can be a single domain or a comma separated list. &#xD;
+3)	In the last field enter the one e-mail address where all other e-mails will be re-routed (if they're not sent to someone in the allowed domain names list).&#xD;
+&#xD;
+Once enabled and setup with both fields (note &#x2013; you must enter data in both the Allowed Domains and the Route Email fields for the module to operate) any e-mails Magento sends to addresses that are not in the allowed domain name list are redirected to the entered e-mail address.&#xD;
+&#xD;
+When you're done using the redirector, simply disable it by setting Enable email redirects drop-down to No. When the module is disabled, e-mail function will return to normal.&#xD;
+&#xD;
+To uninstall the module simply remove it from the Magenta file system. This module makes no modifications to the database and can safely deleted without any other changes to Magento.</description>
+    <notes>This is the first release</notes>
+    <authors><author><name>Human Element</name><user>groggu</user><email>gregc@human-element.com</email></author></authors>
+    <date>2012-12-19</date>
+    <time>17:13:29</time>
+    <contents><target name="magecommunity"><dir name="HEDevTools"><dir name="EmailRedirect"><dir name="Model"><dir name="Email"><file name="Info.php" hash="05030e98bfc8e5257827723c69f733f0"/></dir><file name=".DS_Store" hash="d136742f2bad94642296b912e18664c2"/></dir><dir name="etc"><file name="adminhtml.xml" hash="fe9cfe4c68a745615e8547d365a87850"/><file name="config.xml" hash="c708ecc91dc3c865cee175d3569b77b9"/><file name="system.xml" hash="16ad3e509488175e8d3ee068ad2a4230"/></dir><file name=".DS_Store" hash="4e6e62c49783e7e971f145ce1087df2d"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="HEDevTools_EmailRedirect.xml" hash="6803e2b48702d458de52e1f19f064eaf"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

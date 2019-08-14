@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <modules>
+        <HEDevTools_EmailRedirect>
+            <version>1.0.0</version>
+        </HEDevTools_EmailRedirect>
+    </modules>   
+    <global>
+		<models>
+			<he_tools>
+				<class>HEDevTools_EmailRedirect_Model</class>
+			</he_tools>
+            <core>
+                <rewrite>
+                    <email_info>HEDevTools_EmailRedirect_Model_Email_Info</email_info>
+                </rewrite>
+            </core>
+		</models>
+	</global>
+</config>
+
+
+
+
+
+
+
+
+
+
+

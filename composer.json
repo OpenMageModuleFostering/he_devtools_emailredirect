@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/HE_DevTools_EmailRedirect",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "HE Dev Tools Email Redirect allows a developer to redirect all email from a Magento store to a specific address.",
+    "authors": [
+    {
+        "name": "Human Element",
+        "email": "gregc@human-element.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

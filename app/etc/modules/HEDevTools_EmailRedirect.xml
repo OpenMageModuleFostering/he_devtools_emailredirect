@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <HEDevTools_EmailRedirect>
+            <active>true</active>
+            <codePool>community</codePool>
+        </HEDevTools_EmailRedirect>
+    </modules>
+</config>
