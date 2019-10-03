@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/HE_DevTools_EmailRedirect",
+    "name": "openmage-module-fostering\/he_devtools_emailredirect",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "HE Dev Tools Email Redirect allows a developer to redirect all email from a Magento store to a specific address.",
     "authors": [

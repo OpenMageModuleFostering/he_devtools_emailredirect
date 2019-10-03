@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 HE Dev Tools Email Redirect allows a developer to redirect all email from a Magento store to a specific address.
